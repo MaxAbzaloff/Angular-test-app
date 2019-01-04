@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic);
+  @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+  font-family: Roboto;
+}
+
+.layout {
+  width: 100vw;
+  min-height: 100vh;
+
+  &__loading-text {
+    font-weight: 600;
+    font-size: 2rem;
+    color: darkolivegreen;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+  }
+}
+
+ui-view {
+  width: 100vw;
+}

@@ -1,0 +1,28 @@
+<div>
+  <div class="address-book__list">
+    <md-list-item class="secondary-button-padding" ng-repeat="(idx, account) in addressBook.accounts track by idx" ng-dblclick="addressBook.doubleClick($event, account)">
+      <img ng-src="{{account.avatar}}?{{$index}}" class="md-avatar" alt="{{account.firstname}}" />
+      <p>{{ account.firstname }} {{ account.lastname }}</p>
+      <p>{{ account.email }}</p>
+      <md-button class="md-accent" ng-click="addressBook.removeAccount($event, account)">REMOVE</md-button>
+    </md-list-item>
+  </div>
+
+  <div class="address-book__pagination-container">
+    <md-button class="md-fab md-mini md-primary  md-hue-2" ng-click="addressBook.changePage(addressBook.page - 1)" aria-label="Back">
+      <md-icon ng-bind="'keyboard_arrow_left'"></md-icon>
+    </md-button>
+
+    <md-button class="md-fab md-mini md-primary  md-hue-2" aria-label="Page">
+      {{ addressBook.mainService.getPage() }}
+    </md-button>
+
+    <md-button class="md-fab md-mini md-primary  md-hue-2" ng-click="addressBook.changePage(addressBook.page + 1)" aria-label="Forward">
+      <md-icon ng-bind="'keyboard_arrow_right'"></md-icon>
+    </md-button>
+
+    <md-button class="md-fab address-book__add-new-button" aria-label="Add Account" ng-click="addressBook.addAccount()">
+      <md-icon ng-bind="'add'"></md-icon>
+    </md-button>
+  </div>
+</div>

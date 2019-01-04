@@ -1,0 +1,7 @@
+mutation removeAccount ($account: AccountInput) {
+  removeAccount (account: $account) {
+    id
+    message
+    hasError
+  }
+}

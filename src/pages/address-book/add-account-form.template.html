@@ -1,0 +1,49 @@
+<div class="add-account">
+  <md-toolbar ng-if="true">
+    <div class="md-toolbar-tools">
+      <h3>
+        <span>Creating new Account</span>
+      </h3>
+    </div>
+  </md-toolbar>
+
+  <form name="addAccountForm">
+    <md-content class="md-no-momentum add-account__content">
+      <md-input-container class="md-block">
+        <md-icon ng-bind="'person'" class="email"></md-icon>
+        <input ng-model="addAccount.account.firstname" type="text" placeholder="Firstname" ng-required="true">
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <md-icon ng-bind="'group'" class="email"></md-icon>
+        <input ng-model="addAccount.account.lastname" type="text" placeholder="Lastname" ng-required="true">
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <md-icon ng-bind="'group_add'" class="email"></md-icon>
+        <input ng-model="addAccount.account.middlename" type="text" placeholder="Middle name">
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <md-icon ng-bind="'mail'" class="email"></md-icon>
+        <input ng-model="addAccount.account.email" type="email" placeholder="Email" ng-required="true">
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <md-icon ng-bind="'local_phone'" class="email"></md-icon>
+        <input ng-model="addAccount.account.phone" type="text" placeholder="Phone">
+      </md-input-container>
+
+      <md-input-container class="md-block">
+        <md-icon ng-bind="'face'"></md-icon>
+        <input ng-model="addAccount.account.avatar" type="text" placeholder="Avatar">
+      </md-input-container>
+
+      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap class="add-account__bottom-buttons">
+        <md-button class="md-raised" name="Cancel" ng-click="addAccount.onCancel()">Cancel</md-button>
+        <md-button class="md-raised md-primary" ng-click="addAccount.onConfirm()">Accept</md-button>
+      </section>
+    </md-content>
+  </form>
+
+</div>

@@ -1,0 +1,36 @@
+.address-book {
+
+  &__pagination-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+  }
+
+  &__list {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__add-new-button {
+    position: absolute;
+    bottom: 13px;
+    right: 30px;
+  }
+}
+
+.add-account {
+  width: 50vw;
+
+  @media (max-width: 959px) {
+    width: 100%;
+  }
+
+  &__content {
+    padding: 20px;
+  }
+  &__bottom-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

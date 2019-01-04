@@ -1,0 +1,56 @@
+{
+  "name": "ng-one",
+  "version": "1.0.0",
+  "description": "Test project with angular 1.7",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack-dev-server --config webpack.config.js --mode development",
+    "build-dev": "npx webpack",
+    "build-prod": "npx webpack --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "ng"
+  ],
+  "author": "Max Abzaloff",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-graphql-tag": "^1.6.0",
+    "babel-plugin-import-graphql": "^2.6.2",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.20",
+    "angular": "^1.7.5",
+    "angular-animate": "^1.7.5",
+    "angular-aria": "^1.7.5",
+    "angular-material": "^1.1.10",
+    "angular-messages": "^1.7.5",
+    "angular-resource": "^1.7.5",
+    "apollo-boost": "^0.1.23",
+    "dotenv": "^6.2.0",
+    "graphql": "^14.0.2",
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.11",
+    "rxjs": "^6.3.3"
+  }
+}

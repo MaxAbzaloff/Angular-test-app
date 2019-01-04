@@ -1,0 +1,11 @@
+mutation addAccount ($account: AccountInput) {
+  addAccount (account: $account) {
+    id
+    firstname
+    lastname
+    avatar
+    email
+    phone
+    middlename
+  }
+}

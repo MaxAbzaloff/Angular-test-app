@@ -1,0 +1,21 @@
+<md-button md-no-ink class="md-primary" ng-click="details.goBack()">
+  <md-icon ng-bind="'keyboard_backspace'"></md-icon>
+  back to list
+</md-button>
+
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">{{ details.account.firstname }} {{ details.account.middlename }} {{ details.account.lastname }}</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content layout="row" layout-align="space-between">
+    <div layout="column">
+      <span class="md-subhead">Email: {{ details.account.email }}</span>
+      <span class="md-subhead">Phone: {{ details.account.phone }}</span>
+    </div>
+    <div class="md-media-xl card-media">
+      <img ng-src="{{details.account.avatar}}" class="md-avatar" alt="{{account.firstname}}" />
+    </div>
+  </md-card-content>
+</md-card>

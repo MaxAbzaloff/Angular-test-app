@@ -1,0 +1,14 @@
+query getAccounts ($perPage: Int, $page: Int) {
+  getAccounts (perPage: $perPage, page: $page) {
+    pagesAmount
+    accounts {
+      id
+      firstname
+      lastname
+      avatar
+      email
+      phone
+      middlename
+    }
+  }
+}
